@@ -1,285 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kaka Pit Blog</title>
-    <link rel="icon" type="image/x-icon" href="./Images/Icons/Hero.ico">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <!-- End of Bootstrap -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaka Pit Blog</title>
+  <link rel="icon" type="image/x-icon" href="./Images/Icons/Hero.ico">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <!-- End of Bootstrap -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- GOOGLE FONT -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
-   </style>    
-    <!-- End of GOOGLE FONT -->
+  <!-- GOOGLE FONT -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+  </style>
+  <!-- End of GOOGLE FONT -->
 
-    <script src="jquery.min.js"></script>
-    <script src="jquery.easing.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="jquery.easing.min.js"></script>
 </head>
+
 <body>
   <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark me-6 fixed-top" id="navbar" style="background-color:#3A3973;">
-        <div class="container">
-          <a class="navbar-brand" href="#" style="font-family: 'Carattere', cursive;">Kaka Pit Blog</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav ms-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item" id="brd">
-                <a class="nav-link beranda active" aria-current="page" href="#">BERANDA</a>
+  <nav class="navbar navbar-expand-lg navbar-dark me-6 fixed-top" id="navbar" style="background-color:#3A3973;">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-family: 'Carattere', cursive;">Kaka Pit Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item" id="brd">
+            <a class="nav-link beranda active" aria-current="page" href="#">BERANDA</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link tentang dropdown-toggle" href="#tentang" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              TENTANG
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#pit-muda">Pit Muda</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link tentang dropdown-toggle" href="#tentang" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  TENTANG
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#pit-muda">Pit Muda</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#keluarga">Keluarga</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#titik-balik">Titik Balik</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#impian-demokrasi">Impian Demokrasi</a></li>
-                </ul>
+              <li><a class="dropdown-item" href="#keluarga">Keluarga</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#karir">KARIR</a>
+              <li><a class="dropdown-item" href="#titik-balik">Titik Balik</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#galeri">GALERI</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kontak">KONTAK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer"><i class="bi bi-info-circle"></i></a>
-              </li>
+              <li><a class="dropdown-item" href="#impian-demokrasi">Impian Demokrasi</a></li>
             </ul>
-          </div>
-        </div>
-    </nav>
-    <!-- END OF NAVBAR -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#karir">KARIR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeri">GALERI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">KONTAK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer"><i class="bi bi-info-circle"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAVBAR -->
 
-    <!-- HERO -->
-    <div class="hero container" id="hero">
-      <div class="row">
-        <div class="col-sm-6 hero-kiri">
-          <figure>
-           <img src="./Images/Hero.png">
-         </figure>
-        </div>
-        <div class="col-md-6 hero-kanan">
-          <div class="hero-desc">
-            <p><span class="hero-name" style="font-family: 'Rozha One', serif; font-size: 70px;">Petrus Kasihiw</span></p>
-            <p><span class="hero-profil" style="font-size: 20px;">Calon Anggota DPR RI Dapil Papua Barat Periode 2024-2029</span>
-            <p><span class="hero-motto" style="font-family: 'Rum Raisin', sans-serif; font-size: 25px;">Motto Utama adalah bersahaja,sederhana dan tegas</span></p>
-          </div>
+  <!-- HERO -->
+  <div class="hero container" id="hero">
+    <div class="row">
+      <div class="col-sm-6 hero-kiri">
+        <figure>
+          <img src="./Images/Hero.png">
+        </figure>
+      </div>
+      <div class="col-md-6 hero-kanan">
+        <div class="hero-desc">
+          <p><span class="hero-name" style="font-family: 'Rozha One', serif; font-size: 70px;">Petrus Kasihiw</span></p>
+          <p><span class="hero-profil" style="font-size: 20px;">Calon Anggota DPR RI Dapil Papua Barat Periode
+              2024-2029</span>
+            <p><span class="hero-motto" style="font-family: 'Rum Raisin', sans-serif; font-size: 25px;">Motto Utama
+                adalah bersahaja,sederhana dan tegas</span></p>
         </div>
       </div>
     </div>
-    <!-- END OF HERO -->
+  </div>
+  <!-- END OF HERO -->
 
-    <!-- TENTANG -->
-      <div class="container-tentang" style="background-color: #FFFCDD;">
+  <!-- TENTANG -->
+  <div class="container-tentang" style="background-color: #FFFCDD;">
+    <br>
+    <br>
+    <div class=" title-tentang text-center" id="tentang">TENTANG</div>
+    <br>
+    <br>
+    <div class="isi-tentang">
+      <div class="pit-muda row ps-2">
+        <div class="title-pit-muda col-md-10 offset-md-1" id="pit-muda">Pit Muda</div>
         <br>
-        <br>
-        <div class=" title-tentang text-center" id="tentang">TENTANG</div>
-        <br>
-        <br>
-        <div class="isi-tentang">
-          <div class="pit-muda row ps-2">
-            <div class="title-pit-muda col-md-10 offset-md-1" id="pit-muda">Pit Muda</div>
-            <br>
-            <div class=" isi-pit-muda mx-auto justify-content-center col-10 col-md-8 offset-md-1 fs-6">
-              <br>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ir. Petrus Kasihiw, MT, lahir pada tanggal 8 November 1964, di pedalaman Papua di gubug kecil (belakang rumah) yang dibangun dengan materi bangunan yang sederhana. Gubug ini sering disebut dengan kulit kayu yang dalam tradisi Papua seorang ibu yang melahirkan mereka harus “menyepi” dan tinggal di tempat yang terpisah dari keluarga yang tinggal di rumah induk. Pit lahir di Bintuni. Ia merupakan anak sulung dari tiga orang bersaudara. Ia lahir, ketika menjelang ayahnya pensiun sebagai Seorang guru Penginjil. Ia lahir dari keluarga yang serba pas pas an dan serderhana. Meskipun dalam kondisi keluarga yang sederhana, Pit tidak patah semangat untuk mewujudkan cita-citanya menjadiorang yang berguna bagi banyak orang khususnya di Tanah Papua dan Teluk Bintuni.</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pit kecil, mengenal dunia sekolah sejak tingkat dasar (SD) di Bintuni. Namun ia tidak sampai lulus di
-                SD Bintuni itu. Pit hanya sampai kelas 5 SD, kemudian melanjutkan sekolah di SD Nasional Katolik, di
-                Kampung Ngabub, Langgur, Kei kecil, Maluku Tenggara, Ia pun menamatkan SD di sekolah ini, pada
-                1977. Kemudian Pit melanjutkan jenjang pendidikan Sekolah tingkat menegah (SMP) di Sekolah Budi
-                Mulia, Langgur. Selepas SMP, ia memilih sekolah di SMA Sanata Karya, Langgur, Kei Kecil. Namun di
-                sekolah ini, ia hanya sampai kelas dua, karena pindah sekolah di Sorong dan akhirnya tamat dari SMA di
-                Sorong pada 1984. Sepanjang menempuh pendidikan selama 12 tahun dari SD dan SMP di Kei, Maluku
-                hingga SMA di Sorong, Pit mampu memperlihatkan keunggulan. Ia bisa menjadi siswa yang berprestasi
-                dan juga unggul dalam berbagai mata pelajaran. Setelah menamatkan SMA, Pit remaja sempat memilih
-                kuliah di Jurusan Kedokteran Hewan di Universitas Hasanuddin Makassar, Sulawesi Selatan. Namun
-                karena kondisi keuangannya, Ia tidak sampai menamatkan pendidikannya itu. Ia pun kembali ke Bintuni
-                dan mulai berprofesi sebagai guru honorer di SMP Santa Monika, Bintuni, pada 1985.</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Namun semangatnya untuk melanjutkan pendidikan ke perguruan tinggi tidak pernah padam. Lalu
-                Pit kembali mengikuti tes seleksi masuk perguruan tinggi di Universitas Cendrawasih (UNCEN),
-                Jayapura. Puji Syukur, atas nama Tuhan, ia dinyatakan lulus dan diterima sebagai mahasiswa di
-                Fakultas Pertanian tahun 1985. Tujuh tahun sudah proses akademik digelutinya di Kampus Uncen.
-                Tepat 1992, Pit berhasil lulus sebagai sarjana kehutanan Uncen. Ia pun tak sabar mengabarkan
-                kelulusannya itu pada sang ibunda, karena ia tidak sempat meberitahukan kalau ia melanjutkan studi di
-                Uncen.</p>
-                <br>
-            </div>
-          </div>
-          
-          <div class="keluarga">
-            <div class="title-keluarga col-md-10 offset-md-1 ps-4" id="keluarga">Keluarga</div>
-            <div class="isi-keluarga col-md-10 offset-md-1">
-              <div class="hero-isi-keluarga"><center><img src="./Images/Family.jpg"  sizes="(min-width: 640px) 50vw" alt=""></center></div>
-              <br>
-              <div class="row justify-content-center fs-6 m-auto p-3 cover-isi-keluarga">
-                <div class="isi-keluarga-kiri col-md-5"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meskipun semua orang tahu bahwa secara politik ia sebetulnya bisa memanfaatkan soal silsilah keluarga ini untuk memperbesar dukungan politiknya. Namun ia agak merasa kurang nyaman dengan ini. Satu hal yang jelas ia adalah anak Papua yang punya mimpi besar untuk membang Papua Mimpi untuk membangunan Teluk Bintuni, tempat kelahirannya. Pembangunan yang dibangun bukan dari pusa kota, tetapi dari pinggiran ke tengah kota. yang punya mimpi besar untuk membang Papua Mimpi untuk membangun Teluk Bintuni, tempat kelahirannya.</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pembangunan yang dibangun bukan
-                  dari pusa kota, tetapi dari pinggiran ke
-                  tengah kota. Ayahnya seorang penginjil
-                  Katolik dari Kei, yang secara
-                  administratif masuk dalam wilayah
-                  Kepulauan Maluku, bernama Amandus
-                  Kasihiw. Ayahnya, memilih tinggal di
-                  tanah Papua di kawasan yang sekarang
-                  berkembang menjadi Kabupaten Teluk
-                  Bintuni. Persisnya. di lokasi yang
-                  sekarang berdiri megah kawasan
-                  industri LNG Tangguh. Ibunya,
-                  merupakan orang asli Papua. Jadi,
-                  Petrus Kasihiw memiliki darah campuran
-                  Ambon-Papua. Sebagai penginjil, tentu
-                  sang ayah sering melakukan perjalanan
-                  dari satu daerah ke daerah lainnya.
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perjalanan yang dilakukan Sang Ayah,
-                    Amandus Kasihiw, bukan hanya
-                    diwilayah perkotaan, tetapi lebih banyak
-                    keluar masuk kampung dengan jarak
-                    tempuh yang tidak bisa dikatakan
-                    singkat. Suatu kisah hidup yang penuh
-                    tantangan dan ujian. Amandus Kasihiw,
-                    tak lelah berjuang menyusuri dan
-                    menjelajahi Tanah Papua demi tugas
-                    suci mulia, sebagai bapak Penginjil. la
-                    menebarkan kasih tanpa batas serta
-                    menuntun tugas dan tanggungjawabnya
-                    sebagai Pelayan Tuhan</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suatu kisah hidup yang penuh
-                      tantangan dan ujian. Amandus Kasihiw,
-                      tak lelah berjuang menyusuri dan
-                      menjelajahi Tanah Papua demi tugas
-                      suci mulia, sebagai bapak Penginjil. la
-                      menebarkan kasih tanpa batas serta
-                      menuntun tugas dan tanggung-jawabnya
-                      sebagai Pelayan Tuhan.
-                      </p>
-                </div>
-                <div class="isi-keluarga-kanan col-md-5"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keputusannya untuk tinggal di Teluk Bintuni,
-                  baru terjadi sekitar tahun 1958. Ketika itu,
-                  Amandus menginjakkan kaki pertama di tanah
-                  Sisar Matiti. Mungkin sudah jadi kehendak Tuhan,
-                  karena di daerah ini pula Amandus menemukan
-                  jalan hidupnya, kekasih hati yang didambakan. Ia
-                  bersua dengan perempuan asli Papua bernama
-                  Dekalah Trogbadan membangun rumah tangga
-                  dengannya. Dari pernikahan itu, mereka
-                  dikaruniai tiga orang anak. Petrus Kasihiw
-                  merupakan anak sulung dari pasangan ini,
-                  dengan kedua orang adik lainnya.
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selaku orang tua yang menjadi pelayan Tuhan,
-                    Penginjil Katolik, sudah pasti memberi kehidupan
-                    yang cerah dengan keimanan ibadah yang tinggi
-                    bagi anak-anak dan keluarganya. Hal ini terpatri
-                    dalam kehidupan Petrus Kasihiw hingga saat ini.</p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ayahnya meninggal saat berusia 86 tahun.
-                    Ketika itu, Petrus baru saja menyelesaikan studi
-                    sarjananya di Kampus Universitas Cendrawasih
-                    Papua. Kehilangan sosok panutan, sempat
-                    menjadi pukulan telak yang menyedihkan bagi
-                    Petrus dan keluarga. Sosok kebapaan yang
-                    selalu meneruskan cahaya iman, kini telah
-                    dipanggil Tuhan</p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Namun kepergian ayahnya itu, tidak membuat
-                    Petrus patah semangat. Ia bangkit. Ia justru
-                    semakin terdorong untuk mewujudkan impian
-                    ayahnya, untuk membangun Bintuni. Ia pun
-                    berjuang keras, berusaha sekuat tenaga,
-                    melangkahkan kaki untuk menemukan
-                    kesuksesannya kelak. Sepeninggal sang ayah, Pit
-                    tinggal berempat bersama dengan kedua adik
-                    serta ibu yang selalu dicintainya Kehidupan
-                    mereka sederhana dan ekonominya pun pas
-                    pasan, namun mereka bahagia karena saling
-                    mencurahkan kasih sayang yang tiada henti.
-                    </p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ibunya pun berdagang sayur untuk memenuhi
-                      kebutuhan hidup sehari-hari. Sampai kini pun,
-                      sang ibu tetap berdagang. Ia tak mau hidupnya
-                      membebani sang anak, meskipun anaknya saat
-                      ini sudah menjadi bupati di Teluk Bintuni.
-                      </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div class=" isi-pit-muda mx-auto justify-content-center col-10 col-md-8 offset-md-1 fs-6">
           <br>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ir. Petrus Kasihiw, MT, lahir pada tanggal 8 November 1964, di
+            pedalaman Papua di gubug kecil (belakang rumah) yang dibangun dengan materi bangunan yang sederhana. Gubug
+            ini sering disebut dengan kulit kayu yang dalam tradisi Papua seorang ibu yang melahirkan mereka harus
+            “menyepi” dan tinggal di tempat yang terpisah dari keluarga yang tinggal di rumah induk. Pit lahir di
+            Bintuni. Ia merupakan anak sulung dari tiga orang bersaudara. Ia lahir, ketika menjelang ayahnya pensiun
+            sebagai Seorang guru Penginjil. Ia lahir dari keluarga yang serba pas pas an dan serderhana. Meskipun dalam
+            kondisi keluarga yang sederhana, Pit tidak patah semangat untuk mewujudkan cita-citanya menjadiorang yang
+            berguna bagi banyak orang khususnya di Tanah Papua dan Teluk Bintuni.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pit kecil, mengenal dunia sekolah sejak tingkat dasar (SD) di
+            Bintuni. Namun ia tidak sampai lulus di
+            SD Bintuni itu. Pit hanya sampai kelas 5 SD, kemudian melanjutkan sekolah di SD Nasional Katolik, di
+            Kampung Ngabub, Langgur, Kei kecil, Maluku Tenggara, Ia pun menamatkan SD di sekolah ini, pada
+            1977. Kemudian Pit melanjutkan jenjang pendidikan Sekolah tingkat menegah (SMP) di Sekolah Budi
+            Mulia, Langgur. Selepas SMP, ia memilih sekolah di SMA Sanata Karya, Langgur, Kei Kecil. Namun di
+            sekolah ini, ia hanya sampai kelas dua, karena pindah sekolah di Sorong dan akhirnya tamat dari SMA di
+            Sorong pada 1984. Sepanjang menempuh pendidikan selama 12 tahun dari SD dan SMP di Kei, Maluku
+            hingga SMA di Sorong, Pit mampu memperlihatkan keunggulan. Ia bisa menjadi siswa yang berprestasi
+            dan juga unggul dalam berbagai mata pelajaran. Setelah menamatkan SMA, Pit remaja sempat memilih
+            kuliah di Jurusan Kedokteran Hewan di Universitas Hasanuddin Makassar, Sulawesi Selatan. Namun
+            karena kondisi keuangannya, Ia tidak sampai menamatkan pendidikannya itu. Ia pun kembali ke Bintuni
+            dan mulai berprofesi sebagai guru honorer di SMP Santa Monika, Bintuni, pada 1985.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Namun semangatnya untuk melanjutkan pendidikan ke perguruan
+            tinggi tidak pernah padam. Lalu
+            Pit kembali mengikuti tes seleksi masuk perguruan tinggi di Universitas Cendrawasih (UNCEN),
+            Jayapura. Puji Syukur, atas nama Tuhan, ia dinyatakan lulus dan diterima sebagai mahasiswa di
+            Fakultas Pertanian tahun 1985. Tujuh tahun sudah proses akademik digelutinya di Kampus Uncen.
+            Tepat 1992, Pit berhasil lulus sebagai sarjana kehutanan Uncen. Ia pun tak sabar mengabarkan
+            kelulusannya itu pada sang ibunda, karena ia tidak sempat meberitahukan kalau ia melanjutkan studi di
+            Uncen.</p>
+          <br>
+        </div>
+      </div>
 
-          <div class="titik-balik">
-            <div class="title-titik-balik col-md-10 offset-md-1 ps-2" id="titik-balik">Titik Balik</div>
-            <div class="isi-titik-balik row justify-content-center fs-6 m-auto p-3 cover-titik-balik">
-              <div class="col-md-4 offset-md-2 isi-titik-balik-kiri">
-              <br>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perjalanan hidup, sering kali meluncur
-                dalam jalur yang tidak pernah dibayangkan
-                sebelumnya. Apa yang dilakukan untuk
-                sekedar memenuhi kebutuhan hidup yang
-                lebih baik, ternyata mampu memberikan
-                lebih dari itu. Terkadang juga sebaliknya.
-                Namun, apapun yang terjadi, kehidupan
-                telah memberikan pengalaman dan
-                pelajaran yang amat berharga untuk
-                diabaikan begitu saja.
-                </p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petrus, sejak kecil memang tidak
-                  pernah mempunyai cita-cita ingin menjadi
-                  bupati. Tak pernah terlintas sedikitpun di
-                  kepalanya, untuk menjadi Bupati di Teluk
-                  Bintuni. Bahkan, ketika terpilih sebagai
-                  bupati pun, ia sempat bertanya-tanya pada
-                  istrinya, apakah sedang bermimpi atau
-                  tidak. Satu hal yang pasti, Petrus selalu
-                  ingin menjadi orang yang terbuka pada
-                  banyak hal. Karena ia menyadari, dengan
-                  membuka diri pada banyak hal, maka ia
-                  juga membuka diri pada berbagai masukan
-                  yang akan bermanfaat bagi dirinya, dan
-                  orang-orang di sekitarnya.
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la pun, tak ragu untuk membuka diri
-                    dan beberapa kali merubah cara
-                    pandangnya tentang sisi-sisi kehidupan.
-                    Suatu ketika, ia pernah bermimpi menjadi
-                    penyelamat hutan. Namun, pada saat yang
-                    hampir bersamaan, ia juga ingin
-                    mempunyai kehidupan “normal” tinggal di
-                    kota dan hidup tenang bersama keluarga.</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Di saat lain, ia mulai suka dengan ide
-                      berwirausaha mandiri. Ia pun
-                      membayangkan, jika menjadi pengusaha,
-                      tidak akan menjadi kontraktor yang hanya
-                      menunggu proyek dari pemerintah. Jika
-                      proyek itu datang pun, mungkin hanya
-                      setahun sekali. Jika menjadi pengusaha,
-                      maka ia harus serius menjadi pengusaha
-                      dan menekuninya.
-                    </p>
+      <div class="keluarga">
+        <div class="title-keluarga col-md-10 offset-md-1 ps-4" id="keluarga">Keluarga</div>
+        <div class="isi-keluarga col-md-10 offset-md-1">
+          <div class="hero-isi-keluarga">
+            <center><img src="./Images/Family.jpg" sizes="(min-width: 640px) 50vw" alt=""></center>
+          </div>
+          <br>
+          <div class="row justify-content-center fs-6 m-auto p-3 cover-isi-keluarga">
+            <div class="isi-keluarga-kiri col-md-5">
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meskipun semua orang tahu bahwa secara politik ia sebetulnya
+                bisa memanfaatkan soal silsilah keluarga ini untuk memperbesar dukungan politiknya. Namun ia agak merasa
+                kurang nyaman dengan ini. Satu hal yang jelas ia adalah anak Papua yang punya mimpi besar untuk membang
+                Papua Mimpi untuk membangunan Teluk Bintuni, tempat kelahirannya. Pembangunan yang dibangun bukan dari
+                pusa kota, tetapi dari pinggiran ke tengah kota. yang punya mimpi besar untuk membang Papua Mimpi untuk
+                membangun Teluk Bintuni, tempat kelahirannya.</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pembangunan yang dibangun bukan
+                dari pusa kota, tetapi dari pinggiran ke
+                tengah kota. Ayahnya seorang penginjil
+                Katolik dari Kei, yang secara
+                administratif masuk dalam wilayah
+                Kepulauan Maluku, bernama Amandus
+                Kasihiw. Ayahnya, memilih tinggal di
+                tanah Papua di kawasan yang sekarang
+                berkembang menjadi Kabupaten Teluk
+                Bintuni. Persisnya. di lokasi yang
+                sekarang berdiri megah kawasan
+                industri LNG Tangguh. Ibunya,
+                merupakan orang asli Papua. Jadi,
+                Petrus Kasihiw memiliki darah campuran
+                Ambon-Papua. Sebagai penginjil, tentu
+                sang ayah sering melakukan perjalanan
+                dari satu daerah ke daerah lainnya.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perjalanan yang dilakukan Sang Ayah,
+                Amandus Kasihiw, bukan hanya
+                diwilayah perkotaan, tetapi lebih banyak
+                keluar masuk kampung dengan jarak
+                tempuh yang tidak bisa dikatakan
+                singkat. Suatu kisah hidup yang penuh
+                tantangan dan ujian. Amandus Kasihiw,
+                tak lelah berjuang menyusuri dan
+                menjelajahi Tanah Papua demi tugas
+                suci mulia, sebagai bapak Penginjil.</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suatu kisah hidup yang penuh
+                tantangan dan ujian. Amandus Kasihiw,
+                tak lelah berjuang menyusuri dan
+                menjelajahi Tanah Papua demi tugas
+                suci mulia, sebagai bapak Penginjil. la
+                menebarkan kasih tanpa batas serta
+                menuntun tugas dan tanggung-jawabnya
+                sebagai Pelayan Tuhan.
+              </p>
             </div>
-            <div class="col-md-4 pt-4 isi-titik-balik-kanan">
-              <p>&nbsp;&nbsp;Sedangkan kalau berwirausaha, meskipun
+            <div class="isi-keluarga-kanan col-md-5">
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keputusannya untuk tinggal di Teluk Bintuni,
+                baru terjadi sekitar tahun 1958. Ketika itu,
+                Amandus menginjakkan kaki pertama di tanah
+                Sisar Matiti. Mungkin sudah jadi kehendak Tuhan,
+                karena di daerah ini pula Amandus menemukan
+                jalan hidupnya, kekasih hati yang didambakan. Ia
+                bersua dengan perempuan asli Papua bernama
+                Dekalah Trogbadan membangun rumah tangga
+                dengannya. Dari pernikahan itu, mereka
+                dikaruniai tiga orang anak. Petrus Kasihiw
+                merupakan anak sulung dari pasangan ini,
+                dengan kedua orang adik lainnya.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selaku orang tua yang menjadi pelayan Tuhan,
+                Penginjil Katolik, sudah pasti memberi kehidupan
+                yang cerah dengan keimanan ibadah yang tinggi
+                bagi anak-anak dan keluarganya. Hal ini terpatri
+                dalam kehidupan Petrus Kasihiw hingga saat ini.</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ayahnya meninggal saat berusia 86 tahun.
+                Ketika itu, Petrus baru saja menyelesaikan studi
+                sarjananya di Kampus Universitas Cendrawasih
+                Papua. Kehilangan sosok panutan, sempat
+                menjadi pukulan telak yang menyedihkan bagi
+                Petrus dan keluarga. Sosok kebapaan yang
+                selalu meneruskan cahaya iman, kini telah
+                dipanggil Tuhan</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Namun kepergian ayahnya itu, tidak membuat
+                Petrus patah semangat. Ia bangkit. Ia justru
+                semakin terdorong untuk mewujudkan impian
+                ayahnya, untuk membangun Bintuni. Ia pun
+                berjuang keras, berusaha sekuat tenaga,
+                melangkahkan kaki untuk menemukan
+                kesuksesannya kelak. Sepeninggal sang ayah, Pit
+                tinggal berempat bersama dengan kedua adik
+                serta ibu yang selalu dicintainya Kehidupan
+                mereka sederhana dan ekonominya pun pas
+                pasan, namun mereka bahagia karena saling
+                mencurahkan kasih sayang yang tiada henti.
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ibunya pun berdagang sayur untuk memenuhi
+                kebutuhan hidup sehari-hari. Sampai kini pun,
+                sang ibu tetap berdagang. Ia tak mau hidupnya
+                membebani sang anak, meskipun anaknya saat
+                ini sudah menjadi bupati di Teluk Bintuni.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="titik-balik">
+        <div class="title-titik-balik col-md-10 offset-md-1 ps-2" id="titik-balik">Titik Balik</div>
+        <div class="isi-titik-balik row justify-content-center fs-6 m-auto p-3 cover-titik-balik">
+          <div class="col-md-4 offset-md-2 isi-titik-balik-kiri">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perjalanan hidup, sering kali meluncur
+              dalam jalur yang tidak pernah dibayangkan
+              sebelumnya. Apa yang dilakukan untuk
+              sekedar memenuhi kebutuhan hidup yang
+              lebih baik, ternyata mampu memberikan
+              lebih dari itu. Terkadang juga sebaliknya.
+              Namun, apapun yang terjadi, kehidupan
+              telah memberikan pengalaman dan
+              pelajaran yang amat berharga untuk
+              diabaikan begitu saja.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petrus, sejak kecil memang tidak
+              pernah mempunyai cita-cita ingin menjadi
+              bupati. Tak pernah terlintas sedikitpun di
+              kepalanya, untuk menjadi Bupati di Teluk
+              Bintuni. Bahkan, ketika terpilih sebagai
+              bupati pun, ia sempat bertanya-tanya pada
+              istrinya, apakah sedang bermimpi atau
+              tidak. Satu hal yang pasti, Petrus selalu
+              ingin menjadi orang yang terbuka pada
+              banyak hal. Karena ia menyadari, dengan
+              membuka diri pada banyak hal, maka ia
+              juga membuka diri pada berbagai masukan
+              yang akan bermanfaat bagi dirinya, dan
+              orang-orang di sekitarnya.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la pun, tak ragu untuk membuka diri
+              dan beberapa kali merubah cara
+              pandangnya tentang sisi-sisi kehidupan.
+              Suatu ketika, ia pernah bermimpi menjadi
+              penyelamat hutan. Namun, pada saat yang
+              hampir bersamaan, ia juga ingin
+              mempunyai kehidupan “normal” tinggal di
+              kota dan hidup tenang bersama keluarga.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Di saat lain, ia mulai suka dengan ide
+              berwirausaha mandiri. Ia pun
+              membayangkan, jika menjadi pengusaha,
+              tidak akan menjadi kontraktor yang hanya
+              menunggu proyek dari pemerintah. Jika
+              proyek itu datang pun, mungkin hanya
+              setahun sekali. Jika menjadi pengusaha,
+              maka ia harus serius menjadi pengusaha
+              dan menekuninya.
+            </p>
+          </div>
+          <div class="col-md-4 pt-4 isi-titik-balik-kanan">
+            <p>&nbsp;&nbsp;Sedangkan kalau berwirausaha, meskipun
               penghasilannya mungkin tidak besar, namun
               bisa mendapatkan rejeki secara rutin. Jika itu
               ditekuni, maka ia punya keyakinan, apapun
@@ -295,257 +323,269 @@
               yang ada, berapapun jumlahnya, dengan
               membuka usaha-usaha baru sebagai langkah
               inovatif.
-              </p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la memetik kisah dari Bob Sadino, seorang
-                pengusaha sukses. Bahwa bekerja lalu
-                mendapat gaji yang pas-pasan. itu bukan
-                bekerja tapi dikerjain. Sehingga Petrus ingin
-                membangun imaji masyarakat Papua
-                agarmengalami proses perubahan mindset.
-                dari yang santai menjadi peka, dari kerja biasa
-                menjadi produktif dan dari hura-hura menjadi
-                inovatif. la ingin warga Bintuni ada titik balik,
-                dan termotivasi, sehingga mau merubah
-                mindset. Bagi mereka yang mau pun. tidak
-                mudah untuk mengubah mindset dan
-                menjalani hidup sesuai mindset barunya itu.
-                Ini yang membuatkanya kemudian membuat
-                program untuk membantu masyarakat agar
-                bisa berusaha mandiri.
-              </p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dalam kepemimpinannya di pemerintahan
-                di Teluk Bintuni. Petrus setiap tahunnya
-                mengglontorkan Rp 5 miliar untuk mendukung
-                Usaha Mikro Kecil Menengah (UMKM).
-                Kebijakan ini sudah dilakukan sejak 2018.
-                ketika kepemimpinan Petrus memasuki tahun
-                kedua masa pengabdiannya di Teluk Bintuni.
-                Upaya ini juga melibatkan pihak lain dalam hal
-                ini perbankan, yakni Bank Mandiri dan BRI
-                guna penyalurkan dana bantuan bagi setiap
-                UMKM tersebut.
-                </p>
-              </div>
-              <div class="col-md-2 pt-4 isi-titik-balik-kanan">
-                <img src="./Images/BackgroundTitikBalik.jpg" alt="">
-              </div>
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la memetik kisah dari Bob Sadino, seorang
+              pengusaha sukses. Bahwa bekerja lalu
+              mendapat gaji yang pas-pasan. itu bukan
+              bekerja tapi dikerjain. Sehingga Petrus ingin
+              membangun imaji masyarakat Papua
+              agarmengalami proses perubahan mindset.
+              dari yang santai menjadi peka, dari kerja biasa
+              menjadi produktif dan dari hura-hura menjadi
+              inovatif. la ingin warga Bintuni ada titik balik,
+              dan termotivasi, sehingga mau merubah
+              mindset. Bagi mereka yang mau pun. tidak
+              mudah untuk mengubah mindset dan
+              menjalani hidup sesuai mindset barunya itu.
+              Ini yang membuatkanya kemudian membuat
+              program untuk membantu masyarakat agar
+              bisa berusaha mandiri.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dalam kepemimpinannya di pemerintahan
+              di Teluk Bintuni. Petrus setiap tahunnya
+              mengglontorkan Rp 5 miliar untuk mendukung
+              Usaha Mikro Kecil Menengah (UMKM).
+              Kebijakan ini sudah dilakukan sejak 2018.
+              ketika kepemimpinan Petrus memasuki tahun
+              kedua masa pengabdiannya di Teluk Bintuni.
+              Upaya ini juga melibatkan pihak lain dalam hal
+              ini perbankan, yakni Bank Mandiri dan BRI
+              guna penyalurkan dana bantuan bagi setiap
+              UMKM tersebut.
+            </p>
           </div>
-        </div>
-
-          
-          <div class="impian-demokrasi">
-            <br><br>
-            <div class="title-impian-demokrasi col-md-10 offset-md-1 ps-4 row" id="impian-demokrasi">Impian Demokrasi</div>
-            <br><br><br>
-            <div class="sub-title-impian-demokrasi mx-auto justify-content-center p-1" style="font-family: 'Rancho', cursive; font-size:39px; text-align: center;">
-              Kaka Pit Menuju Senayan
-            </div>
-            <br><br>
-            <div class="isi-impian-demokrasi-1 row justify-content-center p-4  fs-6">
-              <div class="col-md-3 isi-impian-demokrasi-1-kiri">
-                <img src="./Images/BackgroundImpianDemokrasi.jpg" style="border-radius:25px" alt="">
-              </div>
-              <div class="col-md-4 isi-impian-demokrasi-1-kiri">
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mendengar opini dari Matret Kokop
-                  ,Wakil Bupati Teluk Bintuni, Soal
-                  kebersamaan dengan bupati Petrus
-                  Kasihiw ia mengibaratkan sebagai
-                  pasangan rumah tangga yang tak
-                  terpisahkan. Mereka saling mengerti dan
-                  memahami apa yang menjadi keinginan
-                  dan kebutuhan satu sama lainnya.
-                  terutama terkait keinginan untuk
-                  memajukan Teluk Bintuni. Bupati Teluk
-                  Bintuni, Petrus Kasihiw dimata Matret
-                  Kokop, dan menurutnya juga dimata
-                  publik, selalu mewariskan hal hal yang baik
-                  dan positif. Begitu juga dengan kiprahnya
-                  dalam urusan pemerintahan, ia mewarnai
-                  lingkup birokrasi dalam suasana cita dan
-                  suka, namun serius ketika dalam tugas
-                  dan tanggung jawab. Ia menjumpai banyak
-                  orang penuh sapa dan rendah hati. Pribadi
-                  yang kalem penuh jenaka itupun banyak
-                  yang merasa sungkan pada
-                  kepribadiannya yang bersahaja.
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dalam konteks pemerintahan, Matret
-                    Kokop bercerita, Petrus selalu memberi
-                    pilihan-pilihan yang terbaik bagi sesama
-                    birokrat, maupun lintas pimpinan daerah
-                    dijajaran pemerintahan. Hubungannya
-                    saat ini dengan Wakil Bupati, Matret Kokop
-                    tetap harmonis dan penuh kekeluargaan.
-                    Keakraban mereka antar Bupati dan Wakil
-                    Bupati selalu seiring dan sejalan dalam
-                    membangun Teluk Bintuni. Tidak ada
-                    perbedaan apalagi permusuhan antar
-                    keduanya. Jangan heran, chemistry dan
-                    keserasian yang dibangun selama ini
-                    membawa Petrus dan Matret Kokop tetap
-                    terus melanjutkan estafet pemerintahan
-                    Periode Kedua, 2021-2024. Warga Bintuni,
-                    di mata Matret Kokop, memang sungguh
-                    beruntung. Pasalnya, mereka bisa
-                    mendapatkan pemimpin yang merakyat
-                    seperti Petrus Kasihiw. Tentu itu suatu
-                    kehormatan dan kebanggaan tersendiri,
-                    karena warga Bintuni telah memiliki
-                    pemimpin yang jiwa raganya selalu
-                    melayani masyarakat penuh kasih dan
-                    sepenuh hati.
-                    </p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kemudian kita juga mendengar opini dari
-                      Amiludin, Bappeda Teluk Bintuni, menurut beliau
-                      kalau kepemimpinan Petrus Kasihiw yang
-                      mengayomi, sudah terlihat sejak lama. la merintis
-                      jalan perubahan sebagai birokrat ulung, dari satu
-                      daerah ke daerah lain. Membuat ia dikagumi
-                      bahkan eksistensinya selaku top figure, hingga
-                      akhirnya menjadi Bupati Teluk Bintuni. </p>
-                    </div>
-                    <div class="col-md-4 isi-impian-demokrasi-1-kanan">
-                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jejak karir
-                      yang mentereng dimulai dari seorang PNS biasa
-                      hingga merambah berbagai tempat di Papua
-                      Barat sebagai pelayan masyarakat di
-                      pemerintahan. Jabatan demi jabatan di
-                      pemerintahan telah banyak. Petrus dimuka
-                      Amiludin, memiliki segudang pengalaman dalam
-                      mengelola birokrasi serta pemerintahan daerah.
-                      Dialah sosok pemimpin yang tangguh, gesit dan
-                      bertanggung-jawab dalam setiap tugas dan
-                      kegiatan. Ia bagai tokoh yang mempunyai
-                      karakter leadership sejati yang banyak punya
-                      gaya inovasi serta mumpuni.</p>
-                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seperti sama halnya Menurut opini dari Laras
-                        Nuryani, Sekertaris Badan Pengelolaan Keuangan
-                        dan Aset Daerah (BPKAD), Secara pribadi, Petrus
-                        adalah sosok lembut dan penuh perhatian. Ia
-                        menganggap semua orang disekelilingnya adalah
-                        orang-orang yang penting dan sangat berharga.
-                        Sehingga dirinya sering berinteraksi dengan
-                        siapa saja baik dilingkup keluarga, pemerintahan
-                        maupun masyarakat pada umumnya. Dalam
-                        kehidupan keluarga, Petrus adalah pemimpin
-                        yang bertanggung jawab terhadap istri serta
-                        anak-anaknya. la selalu berdoa setiap saat jika
-                        ada kesempatan sebelum berangkat menunaikan
-                        tugas negara sebagai Kepala Daerah di Teluk
-                        Bintuni. Ia merupakan imam yang baik, karena
-                        tingkat ibadahnya yang tinggi. Pit dimata Laras,
-                        merupakan penganut agama Katolik yang taat. Ia
-                        punya kebiasaan peribadatan yang tinggi, serta
-                        khusyu dalam berdoa. Itu pula menurut Laras,
-                        yang dapat memudahkan Pit dalam segala
-                        urusan.</p>
-                        <p class="fs-2" style="font-family: 'Edu TAS Beginner', cursive;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marilah kita torang samua dukung Kaka
-                          Pit tuk dapat menyampaikan aspirasi dan
-                          membangun tanah papua kita bersama <img src="./Images/Hand.png" alt=""></p>
-                    </div>
-            </div>
-            <div class="isi-impian-demokrasi-2 row justify-content-center">
-              <div class="col-10 col-md-8 isi-impian-demokrasi-2-tengah">
-                <p><span class="fs-1" style="font-family: 'Carattere', cursive;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Menjadi seorang pemimpin itu identik dengan keteladanan"</span> begitulah kata Petrus
-                dalam suatu kesempatan. diawal pemerintahan pertamanya saat usai dilantik pada 17 Juni 2016
-                oleh Gubernur Papua Barat.</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petrus mulai bekerja dengan banting setir. la segera meletakan jalur lurus konsep
-                  pembangunan daerah agar tereksekusi dengan baik. Berkat pengalamannya di birokrasi, ia bisa
-                  dengan gesit dan kepiawaian segera bisa menggerakkan roda birokrasi di Teluk Bintuni untuk
-                  bekerja. Bahkan, ia bisa mempercepat kerja mesin penggerak guna mempercepat roda
-                  pembangunan Bintuni. Visinya jelas dan terukur, yakni melakukan terobosan dan inovasi dengan
-                  memanfaatkan kekayaan sumber daya alam serta pemberdayaan sumber daya manusianya.
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lima tahun sudah Petrus Kasihiw yang berpasangan dengan Matret Kokop mengakhiri
-                    kepemimpinannya sebagai bupati dan wakil bupati Kabupaten Teluk Bintuni. Tepatnya, pada
-                    bulan Juni 2021, ia mengakhiri jabatan yang diembannya itu dengan manis. Pada saat yang
-                    sama, mereka berdua akan dilantik sebagai bupati dan wakil bupati Kabupaten Teluk Bintuni
-                    untuk periode jabatan 2021-2024. Jabatan yang kedua kalinya ini, memang hanya tiga tahun.
-                    Karena terkait dengan agenda nasional untuk menyelenggarakan semua pemilihan umum, baik
-                    presiden, gubernur, bupati/walikota, anggota DPR RI, DPR Provinsi, dan DPR Kabupaten/Kota
-                    pada saat bersamaan di tahun 2024.
-                    </p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Itu sebabnya, Petrus berjanji akan menjalankan sejumlah program akselerasi pembangunan,
-                      yang diharapkan dapat segera mempercepat proses upaya mewujudkan kesejahteraan rakyat.
-                      Dengan begitu Petrus Kasihiw berencana untuk mewakilkan diri sebagai calon anggota DPR RI
-                      Dapil Papua Barat untuk periode tahun 2024-2029.
-                      </p>
-                </div>
-            </div>  
+          <div class="col-md-2 pt-4 isi-titik-balik-kanan">
+            <img src="./Images/BackgroundTitikBalik.jpg" alt="">
           </div>
         </div>
       </div>
-    <!-- END OF TENTANG -->
 
-    <!-- KARIR -->
-    <div class="container-karir" style="background-color: #FFFCDD;">
-      <div class="title-karir text-center" id="karir">KARIR</div>
-      <br><br><br><br>
-      <div class="container">
-        <div class="single-box text-center">
-          <div class="custom"></div>
-          <div class="date-area">
-            <span>2008</span>
+
+      <div class="impian-demokrasi">
+        <br><br>
+        <div class="title-impian-demokrasi col-md-10 offset-md-1 ps-4 row" id="impian-demokrasi">Impian Demokrasi</div>
+        <br><br><br>
+        <div class="sub-title-impian-demokrasi mx-auto justify-content-center p-1"
+          style="font-family: 'Rancho', cursive; font-size:39px; text-align: center;">
+          Kaka Pit Menuju Senayan
+        </div>
+        <br><br>
+        <div class="isi-impian-demokrasi-1 row justify-content-center p-4  fs-6">
+          <div class="col-md-3 isi-impian-demokrasi-1-kiri">
+            <img src="./Images/BackgroundImpianDemokrasi.jpg" style="border-radius:25px" alt="">
           </div>
-          <div class="content karir-1">
-            <h2>Google Inc.</h2>
-            <h3>Digital Marketer</h3>
-            <h4><img src="./Images/Karir1.jpg" alt=""></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
+          <div class="col-md-4 isi-impian-demokrasi-1-kiri">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mendengar opini dari Matret Kokop
+              ,Wakil Bupati Teluk Bintuni, Soal
+              kebersamaan dengan bupati Petrus
+              Kasihiw ia mengibaratkan sebagai
+              pasangan rumah tangga yang tak
+              terpisahkan. Mereka saling mengerti dan
+              memahami apa yang menjadi keinginan
+              dan kebutuhan satu sama lainnya.
+              terutama terkait keinginan untuk
+              memajukan Teluk Bintuni. Bupati Teluk
+              Bintuni, Petrus Kasihiw dimata Matret
+              Kokop, dan menurutnya juga dimata
+              publik, selalu mewariskan hal hal yang baik
+              dan positif. Begitu juga dengan kiprahnya
+              dalam urusan pemerintahan, ia mewarnai
+              lingkup birokrasi dalam suasana cita dan
+              suka, namun serius ketika dalam tugas
+              dan tanggung jawab. Ia menjumpai banyak
+              orang penuh sapa dan rendah hati. Pribadi
+              yang kalem penuh jenaka itupun banyak
+              yang merasa sungkan pada
+              kepribadiannya yang bersahaja.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dalam konteks pemerintahan, Matret
+              Kokop bercerita, Petrus selalu memberi
+              pilihan-pilihan yang terbaik bagi sesama
+              birokrat, maupun lintas pimpinan daerah
+              dijajaran pemerintahan. Hubungannya
+              saat ini dengan Wakil Bupati, Matret Kokop
+              tetap harmonis dan penuh kekeluargaan.
+              Keakraban mereka antar Bupati dan Wakil
+              Bupati selalu seiring dan sejalan dalam
+              membangun Teluk Bintuni. Tidak ada
+              perbedaan apalagi permusuhan antar
+              keduanya. Jangan heran, chemistry dan
+              keserasian yang dibangun selama ini
+              membawa Petrus dan Matret Kokop tetap
+              terus melanjutkan estafet pemerintahan
+              Periode Kedua, 2021-2024. Warga Bintuni,
+              di mata Matret Kokop, memang sungguh
+              beruntung. Pasalnya, mereka bisa
+              mendapatkan pemimpin yang merakyat
+              seperti Petrus Kasihiw. Tentu itu suatu
+              kehormatan dan kebanggaan tersendiri,
+              karena warga Bintuni telah memiliki
+              pemimpin yang jiwa raganya selalu
+              melayani masyarakat penuh kasih dan
+              sepenuh hati.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kemudian kita juga mendengar opini dari
+              Amiludin, Bappeda Teluk Bintuni, menurut beliau
+              kalau kepemimpinan Petrus Kasihiw yang
+              mengayomi, sudah terlihat sejak lama. la merintis
+              jalan perubahan sebagai birokrat ulung, dari satu
+              daerah ke daerah lain. Membuat ia dikagumi
+              bahkan eksistensinya selaku top figure, hingga
+              akhirnya menjadi Bupati Teluk Bintuni. </p>
+          </div>
+          <div class="col-md-4 isi-impian-demokrasi-1-kanan">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jejak karir
+              yang mentereng dimulai dari seorang PNS biasa
+              hingga merambah berbagai tempat di Papua
+              Barat sebagai pelayan masyarakat di
+              pemerintahan. Jabatan demi jabatan di
+              pemerintahan telah banyak. Petrus dimuka
+              Amiludin, memiliki segudang pengalaman dalam
+              mengelola birokrasi serta pemerintahan daerah.
+              Dialah sosok pemimpin yang tangguh, gesit dan
+              bertanggung-jawab dalam setiap tugas dan
+              kegiatan. Ia bagai tokoh yang mempunyai
+              karakter leadership sejati yang banyak punya
+              gaya inovasi serta mumpuni.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seperti sama halnya Menurut opini dari Laras
+              Nuryani, Sekertaris Badan Pengelolaan Keuangan
+              dan Aset Daerah (BPKAD), Secara pribadi, Petrus
+              adalah sosok lembut dan penuh perhatian. Ia
+              menganggap semua orang disekelilingnya adalah
+              orang-orang yang penting dan sangat berharga.
+              Sehingga dirinya sering berinteraksi dengan
+              siapa saja baik dilingkup keluarga, pemerintahan
+              maupun masyarakat pada umumnya. Dalam
+              kehidupan keluarga, Petrus adalah pemimpin
+              yang bertanggung jawab terhadap istri serta
+              anak-anaknya. la selalu berdoa setiap saat jika
+              ada kesempatan sebelum berangkat menunaikan
+              tugas negara sebagai Kepala Daerah di Teluk
+              Bintuni. Ia merupakan imam yang baik, karena
+              tingkat ibadahnya yang tinggi. Pit dimata Laras,
+              merupakan penganut agama Katolik yang taat. Ia
+              punya kebiasaan peribadatan yang tinggi, serta
+              khusyu dalam berdoa. Itu pula menurut Laras,
+              yang dapat memudahkan Pit dalam segala
+              urusan.</p>
+            <p class="fs-2" style="font-family: 'Edu TAS Beginner', cursive;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marilah kita torang samua dukung Kaka
+              Pit tuk dapat menyampaikan aspirasi dan
+              membangun tanah papua kita bersama <img src="./Images/Hand.png" alt=""></p>
           </div>
         </div>
-        <div class="single-box box-right text-center">
-          <div class="custom"></div>
-          <div class="date-area">
-            <span>2012</span>
-          </div>
-          <div class="content karir-2">
-            <h2>Yahoo Inc</h2>
-            <h3>Senior Marketer</h3>
-            <h4><img src="./Images/Karir2.jpg" alt=""></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
-          </div>
-        </div>
-        <div class="single-box text-center">
-          <div class="custom"></div>
-          <div class="date-area">
-            <span>2016</span>
-          </div>
-          <div class="content karir-3">
-            <h2>Bing</h2>
-            <h3>Junior Marketing officer</h3>
-            <h4><img src="./Images/Karir3.jpg" alt=""></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
-          </div>
-        </div>
-        <div class="single-box box-right text-center">
-          <div class="custom"></div>
-          <div class="date-area">
-            <span>2020</span>
-          </div>
-          <div class="content karir-4">
-            <h2>Youtube</h2>
-            <h3>Search Engine Optimizer</h3>
-            <h4><img src="./Images/Karir1.jpg" alt=""></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
+        <div class="isi-impian-demokrasi-2 row justify-content-center">
+          <div class="col-10 col-md-8 isi-impian-demokrasi-2-tengah">
+            <p><span class="fs-1"
+                style="font-family: 'Carattere', cursive;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Menjadi seorang
+                pemimpin itu identik dengan keteladanan"</span> begitulah kata Petrus
+              dalam suatu kesempatan. diawal pemerintahan pertamanya saat usai dilantik pada 17 Juni 2016
+              oleh Gubernur Papua Barat.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petrus mulai bekerja dengan banting setir. la segera meletakan
+              jalur lurus konsep
+              pembangunan daerah agar tereksekusi dengan baik. Berkat pengalamannya di birokrasi, ia bisa
+              dengan gesit dan kepiawaian segera bisa menggerakkan roda birokrasi di Teluk Bintuni untuk
+              bekerja. Bahkan, ia bisa mempercepat kerja mesin penggerak guna mempercepat roda
+              pembangunan Bintuni. Visinya jelas dan terukur, yakni melakukan terobosan dan inovasi dengan
+              memanfaatkan kekayaan sumber daya alam serta pemberdayaan sumber daya manusianya.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lima tahun sudah Petrus Kasihiw yang berpasangan dengan Matret
+              Kokop mengakhiri
+              kepemimpinannya sebagai bupati dan wakil bupati Kabupaten Teluk Bintuni. Tepatnya, pada
+              bulan Juni 2021, ia mengakhiri jabatan yang diembannya itu dengan manis. Pada saat yang
+              sama, mereka berdua akan dilantik sebagai bupati dan wakil bupati Kabupaten Teluk Bintuni
+              untuk periode jabatan 2021-2024. Jabatan yang kedua kalinya ini, memang hanya tiga tahun.
+              Karena terkait dengan agenda nasional untuk menyelenggarakan semua pemilihan umum, baik
+              presiden, gubernur, bupati/walikota, anggota DPR RI, DPR Provinsi, dan DPR Kabupaten/Kota
+              pada saat bersamaan di tahun 2024.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Itu sebabnya, Petrus berjanji akan menjalankan sejumlah program
+              akselerasi pembangunan,
+              yang diharapkan dapat segera mempercepat proses upaya mewujudkan kesejahteraan rakyat.
+              Dengan begitu Petrus Kasihiw berencana untuk mewakilkan diri sebagai calon anggota DPR RI
+              Dapil Papua Barat untuk periode tahun 2024-2029.
+            </p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
-    <!-- END OF KARIR -->
+  </div>
+  <!-- END OF TENTANG -->
 
-    <!-- GALERI -->
-    <div class="container-galeri" id="galeri">
-      <div class="title-galeri text-center">GALERI</div>
-      <div class="galeri">
+  <!-- KARIR -->
+  <div class="container-karir" style="background-color: #FFFCDD;">
+    <div class="title-karir text-center" id="karir">KARIR</div>
+    <br><br><br><br>
+    <div class="container">
+      <div class="single-box text-center">
+        <div class="custom"></div>
+        <div class="date-area">
+          <span>2008</span>
+        </div>
+        <div class="content karir-1">
+          <h2>Google Inc.</h2>
+          <h3>Digital Marketer</h3>
+          <h4><img src="./Images/Karir1.jpg" alt=""></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
+        </div>
+      </div>
+      <div class="single-box box-right text-center">
+        <div class="custom"></div>
+        <div class="date-area">
+          <span>2012</span>
+        </div>
+        <div class="content karir-2">
+          <h2>Yahoo Inc</h2>
+          <h3>Senior Marketer</h3>
+          <h4><img src="./Images/Karir2.jpg" alt=""></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
+        </div>
+      </div>
+      <div class="single-box text-center">
+        <div class="custom"></div>
+        <div class="date-area">
+          <span>2016</span>
+        </div>
+        <div class="content karir-3">
+          <h2>Bing</h2>
+          <h3>Junior Marketing officer</h3>
+          <h4><img src="./Images/Karir3.jpg" alt=""></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
+        </div>
+      </div>
+      <div class="single-box box-right text-center">
+        <div class="custom"></div>
+        <div class="date-area">
+          <span>2020</span>
+        </div>
+        <div class="content karir-4">
+          <h2>Youtube</h2>
+          <h3>Search Engine Optimizer</h3>
+          <h4><img src="./Images/Karir1.jpg" alt=""></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, iusto?</p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#00cba9" fill-opacity="1"
+        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <!-- END OF KARIR -->
+
+  <!-- GALERI -->
+  <div class="container-galeri" id="galeri">
+    <div class="title-galeri text-center">GALERI</div>
+    <div class="galeri">
       <div class=" card-1 row justify-content-center text-center">
         <div class="col-md-3 ps-4 isi-card-1-1">
           <div class="card">
             <img src="./Images/Card-1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
           </div>
         </div>
@@ -554,7 +594,8 @@
             <img src="./Images/Card-2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Petrus Kasihiw Siap Berebut Kursi Senayan</h5>
-              <p class="card-text">Jika DPP berkenan, maka saya mencalonkan diri sebagai anggota DPR RI Dapil Papua Barat Periode 2024-2029</p>
+              <p class="card-text">Jika DPP berkenan, maka saya mencalonkan diri sebagai anggota DPR RI Dapil Papua
+                Barat Periode 2024-2029</p>
             </div>
           </div>
         </div>
@@ -563,7 +604,8 @@
             <img src="./Images/Card-3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
         </div>
@@ -571,7 +613,7 @@
         <div class="card-2 row justify-content-center text-center">
           <div class="col-md-3 isi-card-2-1">
             <div class="card">
-             <img src="./Images/Card-4.jpg" class="card-img-top" alt="...">
+              <img src="./Images/Card-4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">One Magazine</h5>
                 <p class="card-text">Eksklusif berbincang dengan Petrus Kasihiw selaku Bupati Teluk Bintuni</p>
@@ -583,84 +625,98 @@
               <img src="./Images/Card-5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">TIGA BACAPRES 2024</h5>
-                <p class="card-text">H. Anies Rasyid Baswedan, S.E., M.P.P., Ph.D, Muhammad Andika Perkasa, S.E., M.A., M.Sc., M.Phil, Ph.D, Ganjar Pranowo, S.H., M.I.P</p>
+                <p class="card-text">H. Anies Rasyid Baswedan, S.E., M.P.P., Ph.D, Muhammad Andika Perkasa, S.E., M.A.,
+                  M.Sc., M.Phil, Ph.D, Ganjar Pranowo, S.H., M.I.P</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
 
-      <div class="container-carousel">
-        <div class="row">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="1500">
-                <center><img src="./Images/Carousel-1.jpg" class="satu d-block" alt=""></center>
-              </div>
-              <div class="carousel-item" data-bs-interval="1700">
-                <center> <img src="./Images/Carousel-2.jpg" class="dua d-block" alt=""></center>
-              </div>
-              <div class="carousel-item" data-bs-interval="1600">
-                <center> <img src="./Images/Carousel-3.jpg" class="tiga d-block" alt=""></center>
-              </div>
+    <div class="container-carousel">
+      <div class="row">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+              <center><img src="./Images/Carousel-1.jpg" class="satu d-block" alt=""></center>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item" data-bs-interval="1700">
+              <center> <img src="./Images/Carousel-2.jpg" class="dua d-block" alt=""></center>
+            </div>
+            <div class="carousel-item" data-bs-interval="1600">
+              <center> <img src="./Images/Carousel-3.jpg" class="tiga d-block" alt=""></center>
+            </div>
           </div>
-       </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
-    <svg id="kontak" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#06283D" fill-opacity="1" d="M0,128L30,117.3C60,107,120,85,180,96C240,107,300,149,360,165.3C420,181,480,171,540,160C600,149,660,139,720,133.3C780,128,840,128,900,154.7C960,181,1020,235,1080,229.3C1140,224,1200,160,1260,149.3C1320,139,1380,181,1410,202.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
-    <!-- END OF GALERI -->
+  </div>
+  <svg id="kontak" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#06283D" fill-opacity="1"
+      d="M0,128L30,117.3C60,107,120,85,180,96C240,107,300,149,360,165.3C420,181,480,171,540,160C600,149,660,139,720,133.3C780,128,840,128,900,154.7C960,181,1020,235,1080,229.3C1140,224,1200,160,1260,149.3C1320,139,1380,181,1410,202.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+    </path>
+  </svg>
+  <!-- END OF GALERI -->
 
-    <!-- KONTAK -->
-    <div class="container-kontak" id="kontak">
-      <div class="title-kontak text-center">KONTAK</div>
-      <div class="kontak">
-        <div class="row justify-content-center pt-5">
-          <div class="offset-sm col-4 mt-5">
-            <form action="" method="">
+  <!-- KONTAK -->
+  <div class="container-kontak" id="kontak">
+    <div class="title-kontak text-center">KONTAK</div>
+    <div class="kontak">
+      <div class="row justify-content-center pt-5">
+        <div class="offset-sm col-4 mt-5">
+          <form action="" method="">
             <div class="input">
-             <input class="border-info" type="text" required placeholder="&nbsp;&nbsp;&nbsp;Nama Lengkap" size="50%"  autocomplete="off">
-             <input class="border-info" type="text" required placeholder="&nbsp;&nbsp;&nbsp;Alamat" size="50%">
-             <input class="border-info" type="text" required placeholder="&nbsp;&nbsp;&nbsp;Email" size="50%">
+              <input class="border-info" type="text" required placeholder="&nbsp;&nbsp;&nbsp;Nama Lengkap" size="50%"
+                autocomplete="off">
+              <input class="border-info" type="text" required placeholder="&nbsp;&nbsp;&nbsp;Alamat" size="50%">
+              <input class="border-info" type="text" required placeholder="&nbsp;&nbsp;&nbsp;Email" size="50%">
             </div>
-             <div class="file-cover"><input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple></div>
-             </form>
-           </div>
-             <div class="row">
-              <div class="col-md-12 mt-3 text-center">
-                <button class="btn btn-success border-light border-opacity-50" type="submit">Kirim</button>           
-              </div>
-             </div> 
+            <div class="file-cover"><input class="form-control form-control-sm" type="file" id="formFileMultiple"
+                multiple></div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-3 text-center">
+            <button class="btn btn-success border-light border-opacity-50" type="submit">Kirim</button>
           </div>
-      </div>
-    </div>
-    <!-- END OF KONTAK -->
-
-    <!-- FOOTER -->
-    <footer id="footer">
-      <div class="container-footer">
-        <div class="isi-footer text-center fs-6">
-          Copyright &copy; Kaka Pit Blog 2022.
         </div>
       </div>
-    </footer>
-    <!-- END OF FOOTER -->
+    </div>
+  </div>
+  <!-- END OF KONTAK -->
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container-footer">
+      <div class="isi-footer text-center fs-6">
+        Copyright &copy; Kaka Pit Blog 2023.
+      </div>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
 
 
 
-    <script src="index.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
