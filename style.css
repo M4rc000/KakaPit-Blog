@@ -204,7 +204,7 @@ a.dropdown-item:hover{
 }
 .date-area {
 	display: flex;
-	background: linear-gradient(to right, #FFFCDD 45%, #000 45%, #000 45%, #FFFCDD 50%);
+	/* background: linear-gradient(to right, #FFFCDD 45%, #ffffff 45%, #ffffff 45%, #FFFCDD 50%); */
 	order: 2;
 	text-align: center;
 	color: #fff;
@@ -213,9 +213,9 @@ a.dropdown-item:hover{
 }
 .date-area>span {
 	font-size: 15px;
-	line-height: 70px;
+	line-height: 76px;
 	margin: auto;
-	background: #14b6c1;
+	background: #17708b;
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
@@ -227,7 +227,7 @@ a.dropdown-item:hover{
 	border-radius: 25px;
 	color: rgb(243, 243, 243);
 	order: 3;
-	width: 80%;
+	width: 30% !important;
 	padding-left: 10px;
 	background: #6EC62A;
     box-shadow: 1px 1px 3px  black;
@@ -285,7 +285,7 @@ a.dropdown-item:hover{
 
 .container-galeri{
     width: auto;
-    height: 2500px !important;
+    height: 3700px !important;
     background-color:#00cba9;
     align-items: center;
     justify-content: center;
